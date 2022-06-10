@@ -13,7 +13,7 @@ def db_connection():
         print(e)    
     return conn    
 
-
+#End Points
 @app.route('/users', methods=['GET', 'POST'])
 def users():
     conn = db_connection()
