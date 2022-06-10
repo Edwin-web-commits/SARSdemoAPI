@@ -14,5 +14,12 @@ sql_query = """ CREATE TABLE user(
     south_african_id VARCHAR(14) NOT NULL
 )"""
 
+sql_query2 = """ CREATE TABLE submissionPeriod(
+    sub_id INTEGER PRIMARY KEY,
+    submit_from_date TEXT,
+    submit_to_date TEXT,
+    financial_year TEXT NOT NULL
+)"""
+
 cursor.execute(sql_query)
 conn.close()
